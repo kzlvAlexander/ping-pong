@@ -4,7 +4,7 @@ import random
 from .sound import Sound
 
 class Ball:
-    def __init__(self, screen_rect, width, height, color=(255,255,255), menu=False, speed=3):
+    def __init__(self, screen_rect, width, height, color=(255,255,255), menu=False, speed=5):
         self.menu = menu
         self.width = width
         self.height = height

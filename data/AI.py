@@ -30,6 +30,5 @@ class AIPaddle:
                     self.move_down = True
             
     def reset(self):
-        '''reset upon each iteration of update'''
         self.move_up = False
         self.move_down = False

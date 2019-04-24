@@ -7,7 +7,7 @@ class Splash(tools.States):
         tools.States.__init__(self)
         self.screen_rect = screen_rect
         self.next = "MENU"
-        self.timeout = 3
+        self.timeout = 5
         self.start_time = 0
 
         self.cover = pg.Surface((screen_rect.width, screen_rect.height))
@@ -16,7 +16,7 @@ class Splash(tools.States):
         self.alpha_step = 3
 
         self.image = pg.image.load('resources/graphics/splash_page.png').convert_alpha()
-        text = ["Made by",'Lexard']
+        text = []
         self.rendered_text = self.make_text_list("Fixedsys500c",50,text,(0,0,0),320,50)
 
     def make_text_list(self,font,size,strings,color,start_y,y_space):
